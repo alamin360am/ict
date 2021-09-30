@@ -17,6 +17,11 @@ body {
     overflow-x: hidden;
 }
 
+::selection {
+    color: #000;
+    background-color: #fff;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -34,12 +39,26 @@ h1 {
     margin-bottom: 40px;
 }
 
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    height: 4px;
+    width: 100px;
+}
+
 ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
+    margin-bottom: 30px;
 }
 
 ul li {
@@ -48,6 +67,7 @@ ul li {
 
 ul li a:link,
 ul li a:visited {
+    display: inline-block;
     text-decoration: none;
     font-weight: bold;
     color: rgba(25, 42, 86, 1.0);
@@ -60,4 +80,36 @@ ul li a:visited {
 ul li a:active,
 ul li a:hover {
     border-radius: 15px 0 15px 0;
+}
+
+.instraction {
+    max-width: 500px;
+}
+
+.instraction p {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.instraction ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.instraction ul li {
+    color: #fff;
+}
+
+.instraction a {
+    text-decoration: none;
+    color: #fff;
 }
