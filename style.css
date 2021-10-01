@@ -23,11 +23,12 @@ body {
 }
 
 .container {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 20px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -36,7 +37,8 @@ h1 {
     padding: 10px 20px;
     text-align: center;
     border-radius: 20px 0 20px 0;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -112,4 +114,20 @@ ul li a:hover {
 .instraction a {
     text-decoration: none;
     color: #fff;
+}
+
+.home {
+    width: 50px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.home img {
+    width: 80%;
+    padding: 5px;
+    text-align: center;
 }
